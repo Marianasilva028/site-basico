@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecureMe - Segurança Cibernética</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>🔐 SecureMe</h1>
+      <nav>
+        <a href="#simulacao">Simulação</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#senha">Senha</a>
+        <a href="#dicas">Dicas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="simulacao" class="simulacao">
+      <h2>🛑 Simulação de Phishing</h2>
+      <p>Clique no botão abaixo para simular um ataque de phishing.</p>
+      <button id="phishing-btn">Simular Ataque</button>
+      <div id="phishing-alert" class="alerta" style="display:none;">
+        ⚠️ Você clicou em um link de phishing! Nunca confie em links suspeitos!
+      </div>
+    </section>
+
+ 
+    <section id="quiz" class="quiz">
+      <h2>🧠 Quiz de Cibersegurança</h2>
+      <div id="quiz-timer">⏱️ Tempo: 0s</div>
+      <p id="quiz-question"></p>
+      <div id="quiz-options"></div>
+      <p id="quiz-result"></p>
+    </section>
+
+  
+    <section id="senha" class="verificador-senha">
+      <h2>🔑 Verificador de Senha</h2>
+      <p>Digite uma senha abaixo para verificar sua força:</p>
+      <input type="password" placeholder="Digite sua senha" oninput="checkPasswordStrength(this.value)" />
+      <div id="password-strength"></div>
+    </section>
+
+    
+    <section id="dicas" class="dicas">
+      <h2>💡 Dica de Segurança</h2>
+      <p id="seguranca-tip">Carregando dica...</p>
+    </section>
+
+  </main>
+
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
